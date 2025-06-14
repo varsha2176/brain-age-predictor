@@ -39,10 +39,22 @@ app.post('/submit', (req, res) => {
   }
 
   res.send(`
-    <h1>🧠 Brain Age Predictor</h1>
-    <h2>🧠 Your brain age is ~${brainAge}</h2>
-    <p>${message}</p>
-    <a href="/">🔁 Try Again</a>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Brain Age Predictor</title>
+      <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        a { display: inline-block; margin-top: 20px; font-size: 18px; text-decoration: none; }
+      </style>
+    </head>
+    <body>
+      <h1>🧠 Brain Age Predictor</h1>
+      <h2>🧠 Your brain age is ~${brainAge}</h2>
+      <p>${message}</p>
+      <a href="/">🔁 Try Again</a>
+    </body>
+    </html>
   `);
 });
 
