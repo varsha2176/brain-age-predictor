@@ -1,14 +1,15 @@
 {
   "name": "brain-age-predictor",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A fun logic quiz to estimate brain age",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["brain", "quiz", "age", "logic", "math", "fun"],
+  "author": "Varsha Ravi",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
   }
